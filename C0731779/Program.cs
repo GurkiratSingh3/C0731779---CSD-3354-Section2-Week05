@@ -10,18 +10,25 @@ namespace C0731779
     {
         static void Main(string[] args)
         {
-            methodA();
+            methodA();   
         }
         public static void methodA()
         {
+           
             while (Peanut())
             {
-                Console.WriteLine("I am stuck in a infinite loop.");
+                
+                Console.WriteLine("i is {0}", i);
+                if (i > 10) 
+                {
+                    return;
+                }
             }
         }
         public static bool Peanut()
         {
-            return true;
+             i++;
+             return true;
         }
     }
 }
