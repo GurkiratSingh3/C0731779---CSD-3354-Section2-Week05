@@ -8,6 +8,7 @@ namespace C0731779
 {
     class C0731779
     {
+        static int i = 0;
         static void Main(string[] args)
         {
             methodA();   
